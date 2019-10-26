@@ -11,6 +11,8 @@ If you need abc optimization, you need Python 3.
 
 ## After compilation
 Now, you can run ./gentest . To view available options use -h --help arguments.
+
 Simplest test:
 ./gentest -s 
+
 After that command, you will see generated tests in ./out directory, also with .v files, you can see configuration of generated files, such as Boolean Function vector.
