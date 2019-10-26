@@ -1,0 +1,2 @@
+Please put in this folder compiled abc lib :   libabc.o
+You can find abc here: https://github.com/berkeley-abc/abc
