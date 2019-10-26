@@ -9,14 +9,19 @@
 #include <deque>
 #include <fstream>
 #include <cstdint>
+
+
 #define MAX_GATE_NUMBER 24
 #define MAX_BUF_SIZE 32768
-#define notX(a) (a+gateCount)
+
 #define _BUF_ 0
 #define _NOT_ 1
 #define _AND_ 2
 #define _OR_  3
 #define _WIRE_ 4
+
+#define notX(a) (a+gateCount)
+
 class Test {
 private:
 	//structs
@@ -41,7 +46,7 @@ private:
 		uint32_t link;
 	};
 	//data
-    bool need_only_one_circuit;
+    	bool need_only_one_circuit;
 	std::vector<bool> *funcVector;
 	uint32_t gateCount;
 	uint64_t funcVectorSize;
@@ -69,24 +74,19 @@ private:
 	void startMix();
 	void outList();
 	void writeToV();
-    void writeToVOnlyOne();
+ 	void writeToVOnlyOne();
 	uint64_t cascade();
 	uint32_t create2GateFunc(const uint64_t &left);
 
-
 public:
-
-
-
-
 	Test(const uint32_t & _gateCount,bool  is_use_dnfAIG = 0,bool _need_only_one_circuit=0);
 
-	Test(const uint32_t &_gateCount,
+	Test(    const uint32_t &_gateCount,
 		 const std::vector<bool>& _funcVector,
 		 const std::vector<bool> & _negative,
 		 const std::vector<uint32_t>& _permutation,
 		 bool  is_use_dnfAIG = 0,
-         bool _need_only_one_circuit=0
+		 bool _need_only_one_circuit=0
 	    );
 		
 	static uint32_t rngSmall();
