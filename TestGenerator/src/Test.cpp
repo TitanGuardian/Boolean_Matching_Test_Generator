@@ -7,7 +7,7 @@ Test::Test(const uint32_t &_gateCount, bool  is_use_dnfAIG, bool _need_only_one_
 	*funcVector = Test::rngFuncVector(gateCount);
 	negative = new std::vector<bool>;
 	*negative = Test::rngNegative(gateCount);
-    permutation = new std::vector<uint32_t>;
+	permutation = new std::vector<uint32_t>;
 	*permutation = Test::rngPermutation(gateCount);
 	funcVectorSize = std::pow(2, gateCount);
 	countOfFuncElem = _gateCount;
@@ -37,7 +37,7 @@ Test::Test (const uint32_t &_gateCount,const std::vector<bool> & _funcVector,  c
 	*funcVector = _funcVector;
 	negative = new std::vector<bool>;
 	*negative = _negative;
-    permutation = new std::vector<uint32_t>;
+	permutation = new std::vector<uint32_t>;
 	*permutation = _permutation;
 	funcVectorSize = std::pow(2, gateCount);
 	countOfFuncElem = _gateCount;
@@ -45,16 +45,14 @@ Test::Test (const uint32_t &_gateCount,const std::vector<bool> & _funcVector,  c
 	func2gateLink.resize(16);
 	tmpFile.open("./out/tmp.txt");
 	test.open("./out/TestA.v");
-    if (!need_only_one_circuit) testMix.open("./out/TestB.v");
+	if (!need_only_one_circuit) testMix.open("./out/TestB.v");
 	fileConfig.open("./out/Current Configuration.txt");
 	startMain();
-    if (!need_only_one_circuit) startMix();
-
+  	if (!need_only_one_circuit) startMix();
 	if (is_cascade) outFElink=cascade();
 	else stratHandleFuncVect();
-
-    if (!need_only_one_circuit) writeToV();
-    else writeToVOnlyOne();
+	if (!need_only_one_circuit) writeToV();
+    	else writeToVOnlyOne();
 
 	outVec();
 }
