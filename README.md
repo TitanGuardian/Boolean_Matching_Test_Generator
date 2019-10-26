@@ -11,6 +11,7 @@ If you need abc optimization, you need Python 3.
 ### Compilation:
 
 cd TestGenerator
+
 make
 
 ## After compilation
