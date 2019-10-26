@@ -32,7 +32,7 @@ Test::Test(const uint32_t &_gateCount, bool  is_use_dnfAIG, bool _need_only_one_
 Test::Test (const uint32_t &_gateCount,const std::vector<bool> & _funcVector,  const std::vector<bool> & _negative, const std::vector<uint32_t>& _permutation, bool  is_use_dnfAIG, bool _need_only_one_circuit) {
 	is_cascade = !is_use_dnfAIG;
 	gateCount = _gateCount;
-    need_only_one_circuit=_need_only_one_circuit;
+	need_only_one_circuit=_need_only_one_circuit;
 	funcVector = new std::vector<bool>;
 	*funcVector = _funcVector;
 	negative = new std::vector<bool>;
