@@ -8,6 +8,10 @@ After, you have to copy compiled file "libabc.o" to ./abc
 Also, you need installed boost program options library and readline development library.
 If you need abc optimization, you need Python 3.
 
+### Compilation:
+
+cd TestGenerator
+make
 
 ## After compilation
 Now, you can run ./gentest . To view available options use -h --help arguments.
