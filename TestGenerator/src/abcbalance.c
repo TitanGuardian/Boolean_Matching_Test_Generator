@@ -12,7 +12,7 @@ typedef struct Abc_Frame_t_ Abc_Frame_t;
 Abc_Frame_t * Abc_FrameGetGlobalFrame();
 int    Cmd_CommandExecute( Abc_Frame_t * pAbc, const char * sCommand );
  
- int balanceDD  () {     
+int balanceDD  () {     
     Abc_Frame_t * pAbc;
     char * pFileName1= "./out/TestA.v",
          * pFileName2= "./out/TestB.v";
