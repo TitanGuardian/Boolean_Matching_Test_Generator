@@ -1,5 +1,5 @@
 # TestGenerator
-This project created to generate tests for Boolean Matching problem in Logic Synthesis. Test looks like two circuit in Verlig language, which should be given as input for Bolean Matching solver.
+This project created to generate tests for Boolean Matching problem in Logic Synthesis. Test looks like two circuit in Verilog language, which should be given as input for Bolean Matching solver.
 
 ## If you want to compile
 First of all you have to compile abc library: https://github.com/berkeley-abc/abc
